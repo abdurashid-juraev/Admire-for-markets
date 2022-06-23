@@ -1,0 +1,71 @@
+.tab-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    display: inline-block;
+    width: auto;
+    margin-right: 16px;
+  }
+  span {
+    font-family: $fontFamily;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $fontBlack;
+  }
+}
+.opacity {
+  transition: opacity 0.2s;
+  opacity: 0.3;
+}
+.tabBtns {
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+.tab-content {
+  margin-top: 42px;
+  transform: scale(1);
+  transform-origin: top;
+  transition: transform 0.3s;
+  padding: 0 5px;
+  form {
+    margin: 25px 0;
+  }
+}
+.scale {
+  transform: scale(0);
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.content2 {
+  margin-top: -10px;
+  form {
+    margin: 0;
+  }
+  .add-timer {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -12px;
+      background: url("../images/svg/textPicker.svg") no-repeat;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.add-modal-input {
+  font-family: $fontFamily;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.modal {
+  max-width: 340px;
+}
+

@@ -1,0 +1,28 @@
+footer {
+  padding: 33px 20px 40px 20px;
+  background-color: #003791;
+  border-radius: 24px 24px 0px 0px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+
+  .active {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 130%;
+      left: 35%;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #ff6666;
+      // z-index: 5;
+    }
+  }
+}

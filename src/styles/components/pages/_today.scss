@@ -1,0 +1,250 @@
+.today-balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px 0 0;
+  margin-bottom: 16px;
+}
+.today-last {
+  align-items: center;
+  display: flex;
+  span {
+    color: #c70505;
+  }
+}
+.today-first {
+  align-items: center;
+  display: flex;
+  span {
+    color: #003791;
+  }
+  @media (min-width: 768px) {
+    flex-basis: 35%;
+  }
+}
+.today-first,
+.today-last {
+  img {
+    display: inline-block;
+    width: auto;
+    margin-right: 7px;
+  }
+  span {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.today-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.today-N {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  margin-right: 26px;
+}
+.bg-gray {
+  padding: 10px 0;
+  background-color: #809bc8;
+}
+.today-date-title {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+.today-calc {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  flex: 0 0 35%;
+}
+.today-table-inner {
+  display: flex;
+  align-items: center;
+}
+.today-table-N {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #191923;
+  opacity: 0.5;
+  margin-right: 26px;
+}
+.today-clients {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #191923;
+  margin-bottom: 2px;
+}
+.today-time {
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #003791;
+}
+.table-today {
+  padding: 10px 0;
+  .today-last {
+    margin-bottom: 3px;
+  }
+}
+.odd-bg {
+  &:nth-child(odd) {
+    background-color: #f0f4f9;
+  }
+}
+.fixed-block {
+  position: sticky;
+  top: 0px;
+  transition: all 0.3s;
+  padding-top: 25px;
+  background-color: #fff;
+  z-index: 10;
+}
+body {
+  counter-reset: section;
+}
+.today-table-N {
+  &::before {
+    counter-increment: section;
+    content: "" counter(section) "";
+  }
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+  box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s;
+  transform: scale(0);
+  border-radius: 15px;
+  z-index: 30;
+}
+
+.modalActive {
+  transform: scale(1);
+}
+
+.modalContent {
+  display: block;
+  overflow-y: auto;
+  padding: 16px 20px 10px 20px;
+  background: #ffffff;
+  border-radius: 15px;
+}
+
+.modalContent::-webkit-scrollbar {
+  width: 5px;
+}
+
+.modalContent::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modalContent::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.modalContent::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+.modal-market {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.modal-client-info {
+  display: flex;
+  img {
+    display: inline-block;
+    width: auto;
+    margin-right: 12px;
+  }
+  span {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #003791;
+  }
+}
+.modal-market-name {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #191923;
+}
+.modal-client-block {
+  display: flex;
+  margin-bottom: 16px;
+}
+.modal-client-name {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #191923;
+  margin-left: 8px;
+}
+.modal-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 10px 0 10px;
+  border-top: 1px solid #cbcbdb;
+  span,
+  a {
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  a {
+    color: #003791;
+  }
+  span {
+    color: #c70505;
+  }
+  .m-f-line {
+    width: 1px;
+    padding: 0;
+    height: auto;
+    background-color: #cbcbdb;
+  }
+}
+.bodyShadow {
+  background: #191923;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transition: all 0.3s;
+}
+

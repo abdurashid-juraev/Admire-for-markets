@@ -1,0 +1,85 @@
+{% set title = "profile" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+<!-- {% include "components/header.html" %} -->
+
+<main class="main">
+  <div class="header">
+    <div class="container">
+      <nav class="nav profile">
+        <a href="/index.html"><img src="./images/svg/logo.svg" alt="logo"></a>
+        <div class="title-info">Profil</div>
+      </nav>
+    </div>
+  </div>
+  <section class=" dashed-border">
+    <div class="container">
+      <div>
+        <a class="sta-item" href="/today.html">
+          <div class="sta-inner">
+            <span class="profile-img"><img src="./images/png/p1.png" alt=":("></span>
+            <div>
+              <span class="sta-title">usernameyingiz</span>
+              <span class="profile-name">Ismingiz</span>
+            </div>
+          </div>
+          <div><img src="./images/svg/next-blue.svg" alt=":("></div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="profile-body">
+        <div>
+          <div class="profile-body-title">Dastur tilini o'zgartiting</div>
+          <div class="profile-langs">
+            <a href="#!" class="activLang"><img src="./images/png/uzbekistan 1.png" alt=":("></a>
+            <a href="#!"><img src="./images/png/russia 1.png" alt=":("></a>
+            <a href="#!"><img src="./images/png/english.png" alt=":("></a>
+          </div>
+          <a class="sta-item" href="/today.html">
+            <div class="sta-inner"><span class="sta-icon-bg green"><img src="./images/svg/add-w.svg" alt=":("></span>
+              <span class="sta-title">Maxsulot qo'shish</span>
+            </div>
+            <div><img src="./images/svg/next-blue.svg" alt=":("></div>
+          </a>
+          <a class="sta-item" href="/today.html">
+            <div class="sta-inner"><span class="sta-icon-bg orange"><img src="./images/svg/notification-w.svg"
+                  alt=":("></span>
+              <span class="sta-title">Xabarnomalar</span>
+            </div>
+            <div><img src="./images/svg/next-blue.svg" alt=":("></div>
+          </a>
+          <a class="sta-item" href="/today.html">
+            <div class="sta-inner"><span class="sta-icon-bg blue"><img src="./images/svg/notification-w.svg"
+                  alt=":("></span>
+              <span class="sta-title">To'q mavzu</span>
+            </div>
+            <div class="switch-element">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </a>
+        </div>
+        <div class="profile-exit">
+          <a class="sta-item" href="/today.html">
+            <div class="sta-inner"><span class="sta-icon-bg light-red"><img src="./images/svg/exit-red.svg"
+                  alt=":("></span>
+              <span class="sta-title red-title">Dasturdan chiqib ketish</span>
+            </div>
+            <div><img src="./images/svg/next-red.svg" alt=":("></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "components/footer.html" %}
+{% endblock %}

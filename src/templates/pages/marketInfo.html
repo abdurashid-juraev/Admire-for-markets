@@ -1,0 +1,173 @@
+{% set title = "market-info" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+<!-- {% include "components/header.html" %} -->
+<main class="p-b-110">
+  <div>
+    <div class="container">
+      <div class="prev-page">
+        <div class="prev-market">
+          <a href="#!"><img src="./images/svg/left-prev.svg" alt="icon"></a>
+          <div class="market-name">makrosupermarket</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="market-pay">
+    <div class="container">
+      <div class="market-inner">
+        <div class="market-payment">To'lov turi:</div>
+        <div class="market-payment-inner">
+          <label for="money-p">
+            <input type="radio" name="money-p" id="money-p" />
+            <span>Naqt</span></label>
+          <label for="online">
+            <input type="radio" name="online" id="online" />
+            <span>Pul o'tkazmasi</span></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab">
+    <div class="scroll-x">
+      <div class=" container">
+        <ul class="tabs">
+          <li><a href="#">Bugun</a></li>
+          <li><a href="#">Oxirgi hafta</a></li>
+          <li><a href="#">Oxirgi oy</a></li>
+          <li><a href="#">Oxirgi yil</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container tab_content">
+      <div class="tabs_item">
+        <!--Chart.js Canvas Tag -->
+        <div>
+          <canvas id="todayChart" height="250px"></canvas>
+        </div>
+
+      </div>
+
+      <div class="tabs_item">
+
+        <div>
+          <canvas id="bar-chart-horizontal" height="300"></canvas>
+        </div>
+      </div>
+
+      <div class="tabs_item">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, excepturi, minima, corporis deserunt quia
+          quae sit officiis labore inventore autem a delectus consequuntur voluptatem modi eligendi similique sed nam
+          vitae.</p>
+      </div>
+
+      <div class="tabs_item">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, excepturi, minima, corporis deserunt quia
+          quae sit officiis labore inventore autem a delectus consequuntur voluptatem modi eligendi similique sed nam
+          vitae.</p>
+      </div>
+    </div>
+  </div>
+  <div class="bg-blue">
+    <div class="container">
+      <div class="statistic-table">
+        <div> <span class="stat-n">№</span><span>Soni</span> </div>
+        <div>Vaqti</div>
+        <div>Narxi</div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray">
+    <div class="container">
+      <div class="statistic-info">
+        <div> <span>2 500</span><span> ta</span></div>
+        <div> <span>12 564 895</span><span> so'm</span></div>
+      </div>
+
+    </div>
+  </div>
+  <div class="odd-bg">
+    <div class="container">
+      <div class="statistic-info-calc">
+        <div><span class="today-table-N"></span><span class="b-text">19</span></div>
+        <div class="b-text">11:48</div>
+        <div><span class="b-text">200 000 </span><span class="b-text">so'm</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="odd-bg">
+    <div class="container">
+      <div class="statistic-info-calc">
+        <div><span class="today-table-N"></span><span class="b-text">10</span></div>
+        <div class="b-text">11:15</div>
+        <div><span class="b-text">105 000 </span><span class="b-text">so'm</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="odd-bg">
+    <div class="container">
+      <div class="statistic-info-calc">
+        <div><span class="today-table-N"></span><span class="b-text">89</span></div>
+        <div class="b-text">10:10</div>
+        <div><span class="b-text">999 900 </span><span class="b-text">so'm</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="odd-bg">
+    <div class="container">
+      <div class="statistic-info-calc">
+        <div><span class="today-table-N"></span><span class="b-text">98</span></div>
+        <div class="b-text">09:56</div>
+        <div><span class="b-text">122 000 </span><span class="b-text">so'm</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="odd-bg">
+    <div class="container">
+      <div class="statistic-info-calc">
+        <div><span class="today-table-N"></span><span class="b-text">89</span></div>
+        <div class="b-text">10:10</div>
+        <div><span class="b-text">999 900 </span><span class="b-text">so'm</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="odd-bg">
+    <div class="container">
+      <div class="statistic-info-calc">
+        <div><span class="today-table-N"></span><span class="b-text">19</span></div>
+        <div class="b-text">11:48</div>
+        <div><span class="b-text">200 000 </span><span class="b-text">so'm</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="odd-bg">
+    <div class="container">
+      <div class="statistic-info-calc">
+        <div><span class="today-table-N"></span><span class="b-text">98</span></div>
+        <div class="b-text">09:56</div>
+        <div><span class="b-text">122 000 </span><span class="b-text">so'm</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="odd-bg">
+    <div class="container">
+      <div class="statistic-info-calc">
+        <div><span class="today-table-N"></span><span class="b-text">89</span></div>
+        <div class="b-text">10:10</div>
+        <div><span class="b-text">999 900 </span><span class="b-text">so'm</span></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+
+
+{% include "components/footer.html" %}
+{% endblock %}

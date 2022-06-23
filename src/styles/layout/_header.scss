@@ -1,0 +1,78 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0 25px 0;
+}
+.menu {
+  display: flex;
+  padding-right: 6px;
+  li {
+    &:not(:last-child) {
+      margin-right: 26px;
+    }
+  }
+}
+.search {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 15px 15px 15px 15px;
+  background: #fafafb;
+  border: 1px solid rgba(25, 25, 35, 0.15);
+  border-radius: 8px;
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  input {
+    background-color: transparent;
+    margin-right: 10px;
+    flex-grow: 1;
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $fontBlack;
+    width: 0;
+    overflow: hidden;
+    &::placeholder {
+      color: $fontBlack;
+      opacity: 0.5;
+    }
+  }
+  button {
+    width: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+}
+.shov {
+  width: 91%;
+  overflow: auto;
+  visibility: visible;
+  input,
+  button {
+    width: auto;
+    overflow: auto;
+  }
+
+  @media (min-width: 768px) {
+    width: 97%;
+  }
+}
+.relative {
+  position: relative;
+}

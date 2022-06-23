@@ -1,0 +1,126 @@
+{% set title = "product-order" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+<main class="main prod-main">
+  <div class="header">
+    <div class="container">
+      <div class="prev-page">
+        <div class="prev-market">
+          <a class="" href="#!"><img src="./images/svg/left-prev.svg" alt="icon"></a>
+          <div class="market-name">Maxsulot tanlash</div>
+        </div>
+        <a class="basket-wrap" href="#!">
+          <img src="./images/svg/buy-basket.svg" alt="icon">
+          <span class="basket-count">2</span>
+        </a>
+      </div>
+      <div>
+        <form action="#">
+          <div class="search-product">
+            <span><img src="./images/svg/search.svg" alt=":("></span>
+            <input type="text" placeholder="Maxsulot nomi bilan izlang">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="container">
+      <div class="product-block isModal">
+        <div class="product-item">
+          <div class="product-item-img"><img src="./images/png/ice-cream.png" alt=":("> </div>
+          <div>
+            <div class="product-item-title">Suchitra's rich cream</div>
+            <div class="product-item-name">Muzqaymoq </div>
+            <div class="product-item-sum"><span>2 500</span> <span>so'm</span></div>
+          </div>
+        </div>
+        <div class="item-checked checked"><img src="./images/svg/checked.svg" alt=":("></div>
+      </div>
+      <div class="product-block isModal">
+        <div class="product-item">
+          <div class="product-item-img"><img src="./images/png/pelmen.png" alt=":("> </div>
+          <div>
+            <div class="product-item-title">Chuchvara Пельтини</div>
+            <div class="product-item-name">Chuchvara</div>
+            <div class="product-item-sum"><span>22 000</span> <span>so'm</span></div>
+          </div>
+        </div>
+        <div class="item-checked checked"><img src="./images/svg/checked.svg" alt=":("></div>
+      </div>
+      <div class="product-block isModal">
+        <div class="product-item">
+          <div class="product-item-img"><img src="./images/png/molt.png" alt=":("> </div>
+          <div>
+            <div class="product-item-title">Горки фрикадельки</div>
+            <div class="product-item-name">Kotlet</div>
+            <div class="product-item-sum"><span>39 000</span> <span>so'm</span></div>
+          </div>
+        </div>
+        <div class="item-checked"><img src="./images/svg/checked.svg" alt=":("></div>
+      </div>
+      <div class="product-block isModal">
+        <div class="product-item">
+          <div class="product-item-img"><img src="./images/png/hydrolife.png" alt=":("> </div>
+          <div>
+            <div class="product-item-title">Hydrolife fresh</div>
+            <div class="product-item-name">Mineral suv</div>
+            <div class="product-item-sum"><span>1 000</span> <span>so'm</span></div>
+          </div>
+        </div>
+        <div class="item-checked"><img src="./images/svg/checked.svg" alt=":("></div>
+      </div>
+      <div class="product-block isModal">
+        <div class="empty-item">
+          <div class="empty-logo"></div>
+          <div>
+            <div class="empty-name"></div>
+            <div class="empty-price"></div>
+          </div>
+        </div>
+      </div>
+      <div class="product-block isModal">
+        <div class="empty-item">
+          <div class="empty-logo"></div>
+          <div>
+            <div class="empty-name"></div>
+            <div class="empty-price"></div>
+          </div>
+        </div>
+      </div>
+      <div class="product-block isModal">
+        <div class="empty-item">
+          <div class="empty-logo"></div>
+          <div>
+            <div class="empty-name"></div>
+            <div class="empty-price"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal-bg"></div>
+    <div>
+      <div id="infoModal" class="modal">
+        <div class="modalContent">
+          <form action="#" class="add-modal-form">
+            <div class="add-modal-title"><span>Suchitra's rich cream</span><span class="modalCloseButton"><img
+                  src="./images/svg/close-x.svg" alt=":("></span> </div>
+            <div class="add-modal-sum">2 500 so'm</div>
+            <input class="add-modal-input" type="text" placeholder="Dona kiriting">
+            <div class="add-btn">
+              <button>qo'shish</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+{% include "components/footer.html" %}
+{% endblock %}

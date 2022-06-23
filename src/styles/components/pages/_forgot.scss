@@ -1,0 +1,14 @@
+.forgot-title {
+  font-family: $fontFamily;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: $fontWhite;
+}
+.forgot-form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 250px);
+}

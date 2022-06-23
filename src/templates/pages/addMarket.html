@@ -1,0 +1,54 @@
+{% set title = "add-market" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+<!-- header -->
+
+<main>
+  <div class="content-wrapper">
+    <div>
+      <div>
+        <div class="container">
+          <div class="prev-page">
+            <div class="prev-market">
+              <a href="#!"><img src="./images/svg/left-prev.svg" alt="icon"></a>
+              <div class="market-name">Do'kon qo'shish</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <form action="#">
+          <label for="#" class="addMarket-label">
+            <span class="addInput-title">Do'kon username</span>
+            <input class="addInput" type="text" placeholder="market name">
+          </label>
+          <label for="#" class="addMarket-label">
+            <span class="addInput-title">Telefon raqam</span>
+            <input class="addInput" type="tel" placeholder="+998 (__) ___ __ __">
+          </label>
+          <div class="add-product">
+            <span class="add-title">Manzil</span>
+            <div class="select-add">
+              <select class="product-add" name="state">
+                <option value="TX">Toshkent shahar, Olmazor tumani ...</option>
+                <option value="Pl">Toshkent shahar, Yunusobod tumani ...</option>
+                <option value="Ic">Toshkent shahar, Chilonzor tumani ...</option>
+                <option value="Kl">Toshkent shahar, Test tumani ...</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div>
+      <div class="add-btn">
+        <button>qo'shish</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- {% include "components/footer.html" %} -->
+{% endblock %}

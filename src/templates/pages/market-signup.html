@@ -1,0 +1,49 @@
+{% set title = "market-signup" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+<!-- {% include "components/header.html" %} -->
+
+<main class="login">
+  <div class="container">
+    <div class="prev-page">
+      <div class="prev-market">
+        <a class="" href="#!"><img src="./images/svg/left-white.svg" alt="icon"></a>
+        <div class="market-name">Ro'yxatdan o'tish</div>
+      </div>
+
+    </div>
+    <div class="signup-wrap">
+      <div class="signup-title">Do'kon qo'shish uchun ro'yxatdan o'ting</div>
+      <form action="#!" class="signup-form">
+        <div class="input-wrap">
+          <label for="username">
+            <img src="./images/svg/user-input.svg" alt="icon">
+            <input type="text" name="username" placeholder="Username yarating"></label>
+        </div>
+        <div class="input-wrap">
+          <label for="username">
+            <img src="./images/svg/user-input.svg" alt="icon">
+            <input type="text" name="username" placeholder="Ism"></label>
+        </div>
+        <div class="input-wrap">
+          <label for="username">
+            <img src="./images/svg/input-tel.svg" alt="icon">
+            <input type="tel" name="username" placeholder="Telefon raqam"></label>
+        </div>
+        <div class="input-wrap select">
+          <label for="username">
+            <img src="./images/svg/input-location.svg" alt="icon">
+            <input type="text" name="username" placeholder="Do'kon manzilni belgilang"></label>
+          <img src="./images/svg/right-arrow.svg" alt="icon">
+        </div>
+        <button class="login-btn">Ro'yxatdan o'tish</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<!-- {% include "components/footer.html" %} -->
+{% endblock %}

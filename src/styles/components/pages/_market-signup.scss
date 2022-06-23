@@ -1,0 +1,38 @@
+.login {
+  .market-name {
+    color: $fontWhite;
+  }
+}
+.signup-title {
+  font-family: $fontFamily;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 35px;
+  color: $fontWhite;
+  margin-top: 30px;
+}
+.signup-wrap {
+  padding: 36px 20px 30px 20px;
+}
+.signup-form {
+  padding-top: 36px;
+  .input-wrap {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    input {
+      width: 100%;
+    }
+  }
+  .login-btn {
+    margin-top: 65px;
+  }
+}
+.select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  label ~ img {
+    margin-right: 0;
+  }
+}

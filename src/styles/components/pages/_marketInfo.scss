@@ -1,0 +1,30 @@
+.market-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  .market-payment,
+  span {
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    &:first-child {
+      margin-right: 25px;
+    }
+  }
+  input {
+    margin-right: 12px;
+  }
+}
+.market-payment-inner {
+  display: flex;
+}
+#horizontalChart{
+  background-color: #d1d1d1;
+}

@@ -1,0 +1,52 @@
+{% set title = "login" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+<!-- {% include "components/header.html" %} -->
+
+<main class="login">
+  <div class="container">
+    <div class="wrapper">
+      <div class="login-greeting">
+        <div class="login-hello">Salom!</div>
+        <div class="login-happy">Qaytganingizdan xursandmiz</div>
+      </div>
+      <form action="#!" class="login-form">
+        <div class="input-wrap">
+          <label for="username">
+            <img src="./images/svg/user-input.svg" alt="">
+            <input type="text" name="username" placeholder="Username"></label>
+        </div>
+        <div class="input-wrap wrap-input type" id="">
+          <label for="parol">
+            <img src="./images/svg/security-input.svg" alt="">
+            <input id="passwordInput" type="password" name="parol" placeholder="Parol">
+          </label>
+          <span class="visible lineEye">
+            <img src="./images/svg/invisible-eye.svg" alt="">
+          </span>
+
+        </div>
+        <div class="login-forget"><a href="#!">Parolni unutdingizmi?</a></div>
+        <button class="login-btn">Tizimga kirish</button>
+      </form>
+      <div class="login-el">
+        <span class="login-line"></span><span class="login-text">Boshqa tizim orqali kirish</span><span
+          class="login-line"></span>
+      </div>
+      <a href="#!" class="login-google"><img src="./images/svg/google-login.svg" alt="icon"></a>
+      <div class="login-signin">
+        <div>Tizimda yo'qmisiz? </div>
+        <a href="#!">
+          <span>Ro'yxatdan o'tish</span>
+          <img src="./images/svg/right-arrow.svg" alt="icon">
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- {% include "components/footer.html" %} -->
+{% endblock %}

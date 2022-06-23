@@ -1,0 +1,168 @@
+.add-block {
+  display: flex;
+  margin-bottom: 30px;
+}
+.add-title {
+  font-family: $fontFamily;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 5px;
+  color: $fontBlack;
+}
+.add-label {
+  span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input {
+    padding: 15px 16px;
+    background: rgba(25, 25, 35, 0.02);
+    border: 1px solid rgba(25, 25, 35, 0.15);
+    border-radius: 8px;
+    width: 100%;
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.98);
+    }
+  }
+  &:first-child {
+    margin-right: 20px;
+  }
+}
+.select-add {
+  margin-top: 10px;
+  background: rgba(25, 25, 35, 0.02);
+  border: 1px solid rgba(25, 25, 35, 0.15);
+  border-radius: 8px;
+  width: 100%;
+  select {
+    padding: 15px 20px 15px 16px;
+    background-color: transparent;
+    width: 100%;
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.98);
+    option {
+      width: 100%;
+    }
+  }
+}
+.add-product {
+  margin-bottom: 30px;
+}
+.add-payment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  label {
+    display: inline-block;
+  }
+}
+.add-payment-label {
+  display: flex;
+  align-items: center;
+  span {
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.98);
+  }
+  input {
+    &:first-child {
+      margin-right: 14px;
+    }
+    &:last-child {
+      margin-left: 14px;
+    }
+  }
+}
+.textarea-wrap {
+  margin-top: 10px;
+  background: rgba(25, 25, 35, 0.02);
+  border: 1px solid rgba(25, 25, 35, 0.15);
+  border-radius: 8px;
+  min-height: 65px;
+  position: relative;
+  margin-bottom: 30px;
+  
+  textarea {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: #000;
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #191923;
+    padding: 10px;
+    &::placeholder {
+      color: rgba(25, 25, 35, 0.2);
+    }
+  }
+}
+.add-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 35px;
+}
+.add-date {
+  display: flex;
+  align-items: center;
+
+  .add-time-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .date {
+    font-family: $fontFamily;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(25, 25, 35, 0.9);
+  }
+}
+.add-timer {
+  font-family: $fontFamily;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(25, 25, 35, 0.9);
+}
+.add-btn {
+  display: flex;
+  button {
+    margin: 0 auto;
+    min-width: 300px;
+    padding: 20px 0;
+    background: #003791;
+    border-radius: 14px;
+    font-family: $fontFamily;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $fontWhite;
+  }
+}
+// .select2

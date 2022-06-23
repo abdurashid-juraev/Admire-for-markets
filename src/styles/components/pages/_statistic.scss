@@ -1,0 +1,80 @@
+.title-info {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: black;
+  flex: 0 0 68%;
+}
+.body {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 72vh;
+}
+.scroll-body {
+  overflow-y: scroll;
+}
+.sta-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.sta-inner {
+  display: flex;
+  align-items: center;
+  img {
+    display: inline-block;
+    width: auto;
+  }
+}
+.green {
+  background-color: #71df83;
+}
+.grey {
+  background-color: #c3cdf0;
+}
+.red {
+  background-color: #ff7e7e;
+}
+.orange {
+  background-color: #ffb169;
+}
+.sta-icon-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 16px;
+  overflow: hidden;
+  img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+.sta-title {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+.sta-balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-b {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: Blue;
+  margin-top: 3px;
+}

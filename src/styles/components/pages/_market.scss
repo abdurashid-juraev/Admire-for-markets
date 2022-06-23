@@ -1,0 +1,163 @@
+.prev-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 5px 16px 5px;
+}
+.prev-market {
+  display: flex;
+  align-items: center;
+  a {
+    margin-right: 16px;
+  }
+  .market-name {
+    font-size: 24px;
+  }
+}
+.logo-market {
+  margin: 0 auto 24px auto;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 55, 145, 0.2);
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+.market-title {
+  font-family: $fontFamily;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: $fontBlack;
+  margin-bottom: 20px;
+}
+.market-contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.market-call,
+.market-location {
+  display: flex;
+  min-width: 160px;
+  padding: 10px 0;
+  img {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+  }
+  span {
+    font-family: $fontFamily;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.7;
+    text-transform: uppercase;
+  }
+}
+.market-call {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #c70505;
+  border-radius: 8px;
+  margin-right: 20px;
+  color: $fontRed;
+}
+.market-location {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #003791;
+  border-radius: 8px;
+  color: $fontBlue;
+}
+.border-dashed {
+  border: 1px dashed #003791;
+  border-left: none;
+  border-right: none;
+  padding: 20px 0;
+  margin-bottom: 24px;
+}
+.market-debt {
+  display: flex;
+  justify-content: space-between;
+}
+.debt-market {
+  font-family: $fontFamily;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $fontBlack;
+}
+.debt-sum {
+  font-family: $fontFamily;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: $fontRed;
+}
+.debt-info {
+  display: flex;
+  justify-content: space-between;
+}
+.debt-client {
+  display: flex;
+  align-items: center;
+  img {
+    display: inline-block;
+    width: auto;
+    margin-right: 12px;
+  }
+  span {
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
+.info-debt {
+  display: flex;
+  padding-right: 8px;
+  img {
+    margin-left: 12px;
+    transition: all 0.3s;
+  }
+  span {
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: $fontWhite;
+    background: rgba(0, 55, 145, 0.4);
+    border-radius: 8px;
+    padding: 5px;
+  }
+}
+
+.debt-check2 {
+  display: none;
+  padding: 10px 15px 15px;
+  background: $bgLight;
+  border-radius: 8px;
+  margin: 20px 0;
+  transition: all 0.3s ease-in-out;
+  .hidden-content {
+    height: auto;
+    overflow: auto;
+  }
+}
+.open {
+  display: block;
+}
+.openEl {
+  transform: rotate(90deg);
+}

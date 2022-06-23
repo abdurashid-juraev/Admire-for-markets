@@ -1,0 +1,47 @@
+{% set title = "diller-signup" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+<!-- {% include "components/header.html" %} -->
+
+<main class="login">
+  <div class="container">
+    <div class="prev-page">
+      <div class="prev-market">
+        <a class="" href="#!"><img src="./images/svg/left-white.svg" alt="icon"></a>
+        <div class="market-name">Ro'yxatdan o'tish</div>
+      </div>
+
+    </div>
+    <div class="signup-wrap">
+      <div class="signup-title">Dillerlikga
+        ro'yxatdan o'tish</div>
+      <form action="#!" class="diller-form signup-form">
+        <div>
+          <div class="input-wrap">
+            <label for="username">
+              <img src="./images/svg/user-input.svg" alt="icon">
+              <input type="text" name="username" placeholder="Username yarating"></label>
+          </div>
+          <div class="input-wrap">
+            <label for="username">
+              <img src="./images/svg/user-input.svg" alt="icon">
+              <input type="text" name="username" placeholder="Ism"></label>
+          </div>
+          <div class="input-wrap">
+            <label for="username">
+              <img src="./images/svg/input-tel.svg" alt="icon">
+              <input type="tel" name="username" placeholder="Telefon raqam"></label>
+          </div>
+        </div>
+
+        <button class="login-btn">Tizimga kirish</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<!-- {% include "components/footer.html" %} -->
+{% endblock %}

@@ -1,0 +1,67 @@
+{% set title = "statistics" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+<!-- {% include "components/header.html" %} -->
+
+<main class="main">
+  <div class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="/index.html"><img src="./images/svg/logo.svg" alt="logo"></a>
+        <div class="title-info">Statistikalar</div>
+      </nav>
+    </div>
+  </div>
+  <section class="scroll-body">
+    <div class="container">
+      <div class="body">
+        <div>
+          <a class="sta-item" href="/today.html">
+            <div class="sta-inner"><span class="sta-icon-bg green"><img src="./images/png/today.png" alt=":("></span>
+              <span class="sta-title">Bugungi
+                ko'rsatkichlari</span>
+            </div>
+            <div><img src="./images/svg/next-blue.svg" alt=":("></div>
+          </a>
+          <a class="sta-item" href="/index.html">
+            <div class="sta-inner"><span class="sta-icon-bg grey"><img src="./images/png/pie-chart.png" alt=":("></span>
+              <span class="sta-title">Do'konlar ko'rsatkichlari</span>
+            </div>
+            <div><img src="./images/svg/next-blue.svg" alt=":("></div>
+          </a>
+          <a class="sta-item" href="/productInfo.html">
+            <div class="sta-inner"><span class="sta-icon-bg red"><img src="./images/png/bar-chart-2.png"
+                  alt=":("></span>
+              <span class="sta-title">Maxsulotlar ko'rsatkichlari</span>
+            </div>
+            <div><img src="./images/svg/next-blue.svg" alt=":("></div>
+          </a>
+          <a class="sta-item" href="#!">
+            <div class="sta-inner"><span class="sta-icon-bg orange"><img src="./images/png/dillers.png" alt=":("></span>
+              <span class="sta-title">Dillerlar ko'rsatkichlar</span>
+            </div>
+            <div><img src="./images/svg/next-blue.svg" alt=":("></div>
+          </a>
+        </div>
+        <div class="sta-balance">
+          <div>
+            <div class="b-text">Umumiy balans</div>
+            <div class="text-b"><span>182 654 123</span><span>so'm</span></div>
+          </div>
+          <div>
+            <div class="b-text">Umumiy do'konlar</div>
+            <div class="text-b"><span>92</span><span>ta</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+{% include "components/footer.html" %}
+{% endblock %}

@@ -1,0 +1,89 @@
+{% set title = "add-info" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+<!-- {% include "components/header.html" %} -->
+<main class="main">
+  <div class="header">
+    <div class="container">
+      <div class="prev-page">
+        <div class="prev-market">
+          <a class="" href="#!"><img src="./images/svg/left-prev.svg" alt="icon"></a>
+          <div class="market-name">Ma'lumot qo'shish</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <form action="#">
+      <div class="add-block">
+        <label class="add-label" for="#">
+          <span class="add-title">Oldi</span>
+          <input type="number" placeholder="999 999 999 999"></label>
+        <label class="add-label" for="#">
+          <span class="add-title">Berdi</span>
+          <input type="number" placeholder="999 999 999 999"></label>
+      </div>
+      <div class="add-product">
+        <span class="add-title">Maxsulot turi</span>
+        <div class="select-add">
+          <select class="product-add" name="state">
+            <option value="TX">Tuxum</option>
+            <option value="Pl">Pelmeni</option>
+            <option value="Ic">Ice-cream</option>
+            <option value="Kl">Kotlet</option>
+          </select>
+        </div>
+      </div>
+      <div class="add-product">
+        <span class="add-title">Diller</span>
+        <div class="select-add">
+          <select class="product-add" name="state">
+            <option value="F1">Falonchi 1</option>
+            <option value="F2">Falonchi 2</option>
+            <option value="F3">Falonchi 3</option>
+            <option value="F4">Falonchi 4</option>
+          </select>
+        </div>
+      </div>
+      <div class="add-product">
+        <span class="add-title">To'lov turi</span>
+        <div class="add-payment">
+          <label class="add-payment-label" for="online">
+            <input type="radio" name="pay" id="online">
+            <span>Pul o'tkazmasi</span></label>
+          <label class="add-payment-label" for="naqd">
+            <input type="radio" name="pay" id="naqd">
+            <span>Naqd</span>
+          </label>
+        </div>
+      </div>
+      <div>
+        <span class="add-title">Izoh</span>
+        <div class="textarea-wrap">
+          <textarea name="#" id="#" rows="3" placeholder="Izoh yozing ..."></textarea>
+        </div>
+      </div>
+      <div>
+        <span class="add-title">Oldi berdi vaqti</span>
+        <div class="add-time">
+          <div class="add-date">
+            <div class="add-time-icon"><img src="./images/svg/time.svg" alt=":("></div>
+            <div class="date">09.06.2021</div>
+          </div>
+          <div class="add-timer">17:58</div>
+        </div>
+        <div class="add-btn">
+          <button>qo'shish</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+
+
+
+{% include "components/footer.html" %}
+{% endblock %}

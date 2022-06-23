@@ -1,0 +1,103 @@
+{% set title = "market-debt" %}
+
+{% extends "main.tpl" %}
+
+{% block content %}
+
+<!-- {% include "components/header.html" %} -->
+
+<main class="main">
+  <div class="header">
+    <div class="container">
+      <div class="prev-page">
+        <div class="prev-market">
+          <a class="" href="#!"><img src="./images/svg/left-prev.svg" alt="icon"></a>
+          <div class="market-name">Qarz ma'lumotlari</div>
+        </div>
+        <a href="#!">
+          <img src="./images/svg/add.svg" alt="icon">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="debt-check">
+      <div class="debt-date">
+        <div class="debt-data">
+          <img src="./images/svg/clock.svg" alt="icon">
+          <span>08.06.2021</span>
+        </div>
+        <div class="debt-text"><span>17:58</span> </div>
+      </div>
+      <div class="debt-info-sum">
+        <div class="debt-el"><img src="./images/svg/up-red.svg" alt="icon"> <span class="debt-text">berdi:</span></div>
+        <div class="debt-give"><span>600 000</span><span> so'm</span> </div>
+      </div>
+      <div class="debt-info-sum debt-info-sum2">
+        <div class="debt-el"><img src="./images/svg/down-blue.svg" alt="icon"> <span class="debt-text">oldi:</span>
+        </div>
+        <div class="debt-give"><span>545 000</span><span> so'm</span> </div>
+      </div>
+      <div class="debt-product">
+        <div class="debt-text">Maxsulot turi:</div>
+        <div class="debt-text-black">Tuxum</div>
+      </div>
+      <div class="hidden-content">
+        <div class="debt-product debt-product2">
+          <div class="debt-text">Diller ismi:</div>
+          <div class="debt-text-black">Falonchi</div>
+        </div>
+        <div class="debt-commet">
+          <div class="debt-text">Izoh:</div>
+          <div class="debt-text">Bu yerga shu oldi berdiga ta'luqli muhim izohlar yoziladi maximum 3 qator</div>
+        </div>
+        <div class="sum-debt"> <span>55 000 </span><span>so'm</span></div>
+      </div>
+
+    </div>
+    <form class="debt-pay">
+      <label for="click"><input type="radio" id="click"> <span>Pul o'tkazmasi</span></label>
+      <label for="money"><input type="radio" id="money"> <span>Naxt</span></label>
+    </form>
+    <div class="debt-pay-date debt-product2">
+      <div>
+        <div class="debt-text-black">08.06.2021</div>
+        <span class="debt-real-time">15:32:21</span>
+      </div>
+      <div>
+        <div class="debt-pay-inner">
+          <div class="debt-give"><span>600 000</span><span> so'm</span> </div>
+          <div class="debt-el"><img src="./images/svg/up-red.svg" alt="icon">
+          </div>
+        </div>
+        <div class="debt-pay-inner2">
+          <div class="debt-give"><span>600 000</span><span> so'm</span> </div>
+          <div class="debt-el"><img src="./images/svg/down-blue.svg" alt="icon">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="debt-pay-date debt-product2">
+      <div>
+        <div class="debt-text-black">12.06.2021</div>
+        <span class="debt-real-time">15:32:21</span>
+      </div>
+      <div>
+        <div class="debt-pay-inner">
+          <div class="debt-give"><span>0</span><span> so'm</span> </div>
+          <div class="debt-el"><img src="./images/svg/up-red.svg" alt="icon">
+          </div>
+        </div>
+        <div class="debt-pay-inner2">
+          <div class="debt-give"><span>100 000</span><span> so'm</span> </div>
+          <div class="debt-el"><img src="./images/svg/down-blue.svg" alt="icon">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+{% include "components/footer.html" %}
+{% endblock %}
