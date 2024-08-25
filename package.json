@@ -5,7 +5,9 @@
   "description": "Gulp Starter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp serve",
+    "build": "gulp build"
   },
   "keywords": [
     "gulp",
@@ -17,7 +19,7 @@
   "devDependencies": {
     "browser-sync": "^2.23.5",
     "del": "^3.0.0",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-archiver": "^1.0.0",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-cache": "^1.0.2",
